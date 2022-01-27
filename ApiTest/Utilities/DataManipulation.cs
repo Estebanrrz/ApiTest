@@ -1,12 +1,9 @@
 ﻿/// < summary >
 /// Utilitie to recreate  code  done on  API https://reqres.in 
 // </summary> 
-using ServiceStack;
 using System;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ApiTest.Utilities
 {
@@ -20,8 +17,7 @@ namespace ApiTest.Utilities
         /// <param name="salary">User salary</param>
         public static void CreateUserDatabase(string id, string name, string salary)
         {
-
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Crami151\source\repos\ApiTest\Utilities\UsersDB.mdf;Integrated Security=True";
+            string connectionString = Properties.Settings.Default.UsersDBConnectionString;
             SqlConnection conn = new SqlConnection(connectionString);
 
             try
@@ -59,8 +55,8 @@ namespace ApiTest.Utilities
         /// <param name="id">user id to be deleted</param>
         public static void DeleteUserDatabaseById(string id)
         {
-
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Crami151\source\repos\ApiTest\Utilities\UsersDB.mdf;Integrated Security=True";
+            
+            string connectionString = Properties.Settings.Default.UsersDBConnectionString;
             SqlConnection conn = new SqlConnection(connectionString);
 
             try
@@ -95,7 +91,7 @@ namespace ApiTest.Utilities
         /// <param name="id">User id to be query</param>
         public static string SelectUserByIDDatabase(string id)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Crami151\source\repos\ApiTest\Utilities\UsersDB.mdf;Integrated Security=True";
+            string connectionString = Properties.Settings.Default.UsersDBConnectionString;
             SqlConnection conn = new SqlConnection(connectionString);
             string output = string.Empty;
 

@@ -2,7 +2,6 @@
 /// API test to execute test cases propose on the test assesment
 /// API https://reqres.in 
 // </summary> 
-using ApiTest.Utilities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;

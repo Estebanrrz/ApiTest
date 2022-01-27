@@ -4,7 +4,6 @@
 using AppGate.APi.Test.Enums;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,10 +27,11 @@ namespace AppGate.APi.Test
             set;
         }
 
+
+
         #endregion
 
         #region Methods
-
         /// <summary>
         /// Execute Request based on testData
         /// </summary>
