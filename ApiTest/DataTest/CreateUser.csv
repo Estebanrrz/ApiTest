@@ -1,0 +1,4 @@
+UserToCreate,ExpectedData,ExpectedStatusCode
+"{""name"":""Pepe Jaramillo"",""salary"":""19000000""}","{""name"":""Pepe Jaramillo"",""salary"":""19000000""}",201
+"{""name"":""Juan Andres Ramirez"",""salary"":""21000000""}","{""name"":""Juan Andres Ramirez"",""salary"":""21000000""}",201
+"{""name"":""francis Ramirez"",""salary"":""0""}","{""name"":""francis Ramirez"",""salary"":""0""}",201

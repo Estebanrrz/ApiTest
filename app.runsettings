@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <!-- Configurations that affect the Test Framework -->
+  <TargetPlatform>x64</TargetPlatform>
+  <!-- MSTest adapter -->
+  <MSTest>
+    <Parallelize>
+      <Workers>5</Workers>
+      <Scope>MethodLevel</Scope>
+    </Parallelize>
+    <!--Ensure the results folder is available after the test finish the exec when the agent async-->
+    <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
+  </MSTest>
+</RunSettings>
